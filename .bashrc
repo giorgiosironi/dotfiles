@@ -61,7 +61,9 @@ export TOSDIR=/opt/tinyos-2.1.1/tos
 CLASSPATH=.:/opt/tinyos-2.1.1/support/sdk/java/tinyos.jar
 export PYTHONPATH=/opt/tinyos-2.1.1/support/sdk/python
 
-alias selenium2="java -jar ~/bin/selenium-server-standalone-2.14.0.jar"
+alias selenium2='java -Dwebdriver.chrome.driver="/home/giorgio/bin/chromedriver" -jar bin/selenium-server-standalone.jar' 
+alias selenium2xvfb='sudo xvfb-run java -Dwebdriver.chrome.driver="/home/giorgio/bin/chromedriver" -jar bin/selenium-server-standalone.jar' 
+
 alias jlineclj="java -cp /usr/share/java/jline.jar:/usr/share/java/clojure.jar jline.ConsoleRunner clojure.main"
 
 GREP_OPTIONS=
