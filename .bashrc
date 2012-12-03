@@ -21,7 +21,6 @@ alias aga='sudo apt-get autoremove'
 C_RED="\[\033[0;31m\]"
 C_GREEN="\[\033[0;32m\]"
 C_LIGHT_GRAY="\[\033[0;37m\]"
-C_RESET="\[\033[0m\]"
 C_BROWN="\[\033[0;33m\]"
 C_BLUE="\[\033[0;34m\]"
 C_PURPLE="\[\033[0;35m\]"
@@ -34,9 +33,11 @@ C_LIGHT_CYAN="\[\033[1;36m\]"
 C_LIGHT_PURPLE="\[\033[1;35m\]"
 C_LIGHT_RED="\[\033[1;31m\]"
 C_LIGHT_GREEN="\[\033[1;32m\]"
+C_RESET="\[\033[0m\]"
 source ~/.bash_prompt
+PS1="${COLOR}[\$(date +%H:%M:%S)][\u@\h:\w]$ ${C_RESET}"
 
-PATH="~/bin:~/maven/bin:~/sweet/bin:${PATH}"
+PATH="~/bin:~/maven/bin:~/sweet/bin:/var/lib/gems/1.8/bin/:${PATH}"
 
 JAVA_HOME=/usr/lib/jvm/java-6-openjdk/
 export JAVA_HOME
