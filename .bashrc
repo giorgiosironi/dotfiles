@@ -70,6 +70,7 @@ GREP_OPTIONS=
 for PATTERN in .cvs .git .hg .svn .work; do
     GREP_OPTIONS="$GREP_OPTIONS --exclude-dir=$PATTERN"
 done
+GREP_OPTIONS="$GREP_OPTIONS --color=always"
 export GREP_OPTIONS
 
 alias phpcsfixer='php ~/php-cs-fixer.phar'
