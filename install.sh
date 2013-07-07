@@ -1,4 +1,5 @@
 #!/bin/bash
+git submodule update -i
 rm ~/.vim
 ln -s ~/dotfiles/.vim ~/.vim
 rm ~/.vimrc
