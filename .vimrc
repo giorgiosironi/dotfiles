@@ -41,3 +41,5 @@ inoremap <Up>       <NOP>
 inoremap <Down>     <NOP>
 inoremap <Left>     <NOP>
 inoremap <Right>    <NOP>
+
+let g:syntastic_html_checkers=[]

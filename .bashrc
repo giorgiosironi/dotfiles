@@ -37,7 +37,7 @@ C_RESET="\[\033[0m\]"
 source ~/.bash_prompt
 PS1="${COLOR}[\$(date +%H:%M:%S)][\u@\h:\w]$ ${C_RESET}"
 
-PATH="~/bin:~/maven/bin:~/sweet/bin:/var/lib/gems/1.8/bin/:${PATH}"
+PATH="~/bin:~/bin/vendor/bin:~/maven/bin:~/sweet/bin:/var/lib/gems/1.8/bin/:${PATH}"
 
 JAVA_HOME=/usr/lib/jvm/java-6-openjdk/
 export JAVA_HOME
@@ -66,6 +66,7 @@ alias selenium2xvfb='sudo xvfb-run java -Dwebdriver.chrome.driver="/home/giorgio
 
 alias jlineclj="java -cp /usr/share/java/jline.jar:/usr/share/java/clojure.jar jline.ConsoleRunner clojure.main"
 
+EDITOR=vim
 GREP_OPTIONS=
 for PATTERN in .cvs .git .hg .svn .work; do
     GREP_OPTIONS="$GREP_OPTIONS --exclude-dir=$PATTERN"
