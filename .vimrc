@@ -6,6 +6,7 @@ set encoding=utf-8
 set showcmd
 set directory=/tmp
 set tabstop=4
+set softtabstop=4
 set shiftwidth=4
 set expandtab
 set smarttab
