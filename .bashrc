@@ -35,14 +35,15 @@ C_LIGHT_RED="\[\033[1;31m\]"
 C_LIGHT_GREEN="\[\033[1;32m\]"
 C_RESET="\[\033[0m\]"
 source ~/.bash_prompt
-PS1="${COLOR}[\$(date +%H:%M:%S)][\u@\h:\w]$ ${C_RESET}"
+function parse_git_dirty {
+    [[ $(git status 2> /dev/null | tail -n1) != "nothing to commit (working directory clean)" ]] && echo "*"
+}
+PS1="${COLOR}[\$(date +%H:%M:%S)][\u@\h:\w]$ ${C_RED}${C_RESET}"
 
 PATH="~/bin:~/bin/vendor/bin:~/maven/bin:~/sweet/bin:/var/lib/gems/1.8/bin/:${PATH}"
 
-JAVA_HOME=/usr/lib/jvm/java-6-openjdk/
+JAVA_HOME=/opt/jdk1.6.0_31/
 export JAVA_HOME
-
-alias nakedphpunit='phpunit --bootstrap tests/bootstrap.php'
 
 shopt -s histappend
 PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
@@ -53,13 +54,7 @@ source /etc/bash_completion
 export JSTESTDRIVER_HOME=~/bin
 alias jstestdriver="java -jar $JSTESTDRIVER_HOME/JsTestDriver-1.3.3d.jar"
 
-export PATH=$PATH:$HOME/omnet_token_ring/omnetpp-4.2/bin:$HOME/android-sdk-linux/tools:$HOME/android-sdk-linux/platform-tools
-
-export MAKERULES=/opt/tinyos-2.1.1/support/make/Makerules
-export TOSDIR=/opt/tinyos-2.1.1/tos
-#source /opt/tinyos-2.1.1/tinyos.sh
-CLASSPATH=.:/opt/tinyos-2.1.1/support/sdk/java/tinyos.jar
-export PYTHONPATH=/opt/tinyos-2.1.1/support/sdk/python
+export PATH=$PATH:$HOME/android-sdk-linux/tools:$HOME/android-sdk-linux/platform-tools
 
 alias selenium2='java -Dwebdriver.chrome.driver="/home/giorgio/bin/chromedriver" -jar ~/bin/selenium-server-standalone.jar' 
 alias selenium2xvfb='sudo xvfb-run java -Dwebdriver.chrome.driver="/home/giorgio/bin/chromedriver" -jar ~/bin/selenium-server-standalone.jar' 
