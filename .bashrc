@@ -62,11 +62,9 @@ alias selenium2xvfb='sudo xvfb-run java -Dwebdriver.chrome.driver="/home/giorgio
 alias jlineclj="java -cp /usr/share/java/jline.jar:/usr/share/java/clojure.jar jline.ConsoleRunner clojure.main"
 
 EDITOR=vim
-GREP_OPTIONS=
 for PATTERN in .cvs .git .hg .svn .work; do
     GREP_OPTIONS="$GREP_OPTIONS --exclude-dir=$PATTERN"
 done
-GREP_OPTIONS="$GREP_OPTIONS --color=always"
 export GREP_OPTIONS
 
 alias phpcsfixer='php ~/php-cs-fixer.phar'
