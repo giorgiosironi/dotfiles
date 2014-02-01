@@ -10,9 +10,6 @@
 [submodule ".vim/bundle/tlib_vim.vim"]
 	path = .vim/bundle/tlib_vim.vim
 	url = git://github.com/tomtom/tlib_vim.git
-[submodule ".vim/bundle/vim-snippets.git"]
-	path = .vim/bundle/vim-snippets.git
-	url = git://github.com/honza/vim-snippets.git
 [submodule ".vim/bundle/syntastic.vim"]
 	path = .vim/bundle/syntastic.vim
 	url = git://github.com/scrooloose/syntastic.git
