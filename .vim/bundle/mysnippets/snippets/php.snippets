@@ -2,7 +2,83 @@ snippet nclass
 	<?php
 	namespace ${1};
 
-	class ${2}
+	class ${2:`Filename()`}
 	{
 		${3}
+	}
+snippet class
+	<?php
+
+	class ${1:`Filename()`}
+	{
+		${2}
+	}
+snippet interface
+	<?php
+
+	interface ${1:`vim_snippets#Filename()`}
+	{
+		${2}
+	}
+snippet ntestc
+	<?php
+	namespace ${1};
+
+	class ${2:`Filename()`}Test extends \PHPUnit_Framework_TestCase
+	{
+		${3}
+	}
+snippet testc
+	<?php
+
+	class ${1:`Filename()`}Test extends \PHPUnit_Framework_TestCase
+	{
+		${2}
+	}
+snippet testm
+	public function test${1}()
+	{
+		${2}
+	}
+snippet construct1
+	private $$1;
+
+	public function __construct($${1:})
+	{
+		$this->$1 = $$1;
+	}
+snippet construct2
+	private $$1;
+	private $$2;
+
+	public function __construct($${1:}, ${2:})
+	{
+		$this->$1 = $$1;
+		$this->$2 = $$2;
+	}
+snippet factorym1
+	private $$1;
+
+	public static function ${2}($${1:})
+	{
+		return new self($$1);
+	}
+
+	private function __construct($$1)
+	{
+		$this->$1 = $$1;
+	}
+snippet factorym2
+	private $$1;
+	private $$2;
+
+	public static function ${3}($${1:}, ${2:})
+	{
+		return new self($$1, $$2);
+	}
+
+	private function __construct($$1, $$2)
+	{
+		$this->$1 = $$1;
+		$this->$2 = $$2;
 	}
