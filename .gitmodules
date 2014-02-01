@@ -3,16 +3,16 @@
 	url = git://github.com/kien/ctrlp.vim.git
 [submodule ".vim/bundle/snipmate.vim"]
 	path = .vim/bundle/snipmate.vim
-	url = https://github.com/garbas/vim-snipmate
+	url = git://github.com/garbas/vim-snipmate
 [submodule ".vim/bundle/vim-addon-mw-utils.vim"]
 	path = .vim/bundle/vim-addon-mw-utils.vim
-	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
+	url = git://github.com/MarcWeber/vim-addon-mw-utils.git
 [submodule ".vim/bundle/tlib_vim.vim"]
 	path = .vim/bundle/tlib_vim.vim
-	url = https://github.com/tomtom/tlib_vim.git
-[submodule ".vim/bundle/snipmate-snippets.git"]
-	path = .vim/bundle/snipmate-snippets.git
-	url = https://github.com/honza/snipmate-snippets.git
+	url = git://github.com/tomtom/tlib_vim.git
+[submodule ".vim/bundle/vim-snippets.git"]
+	path = .vim/bundle/vim-snippets.git
+	url = git://github.com/honza/vim-snippets.git
 [submodule ".vim/bundle/syntastic.vim"]
 	path = .vim/bundle/syntastic.vim
-	url = https://github.com/scrooloose/syntastic.git
+	url = git://github.com/scrooloose/syntastic.git
