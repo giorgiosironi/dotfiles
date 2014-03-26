@@ -27,7 +27,6 @@ set wildmenu
 set wildmode=longest,full
 set wildignore=.svn,.git
 set ruler
-set rnu
 syntax on
 filetype plugin indent on
 
