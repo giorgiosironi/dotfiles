@@ -68,3 +68,6 @@ done
 export GREP_OPTIONS
 
 alias phpcsfixer='php ~/php-cs-fixer.phar'
+export TERM=xterm
+
+source /root/.onebip_bashrc
