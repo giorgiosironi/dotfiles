@@ -6,4 +6,5 @@ rm ~/.vimrc
 ln -s ~/dotfiles/.vimrc ~/.vimrc
 rm ~/.bashrc
 ln -s ~/dotfiles/.bashrc ~/.bashrc
-
+sudo apt-get install tmux
+ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
