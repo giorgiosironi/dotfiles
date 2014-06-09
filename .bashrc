@@ -69,3 +69,5 @@ export GREP_OPTIONS
 
 alias phpcsfixer='php ~/php-cs-fixer.phar'
 export TERM=xterm
+
+setxkbmap -layout "us" -variant "altgr-intl" -option "ctrl:nocaps"
