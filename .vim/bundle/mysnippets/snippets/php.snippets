@@ -40,6 +40,12 @@ snippet testm
 	{
 		${2}
 	}
+snippet tests
+	public function setUp()
+	{
+		${1}
+	}
+
 snippet construct1
 	private $$1;
 
@@ -82,3 +88,17 @@ snippet factorym2
 		$this->$1 = $$1;
 		$this->$2 = $$2;
 	}
+snippet pum
+	public function ${1}(${2})
+	{
+		${3}
+	}
+snippet as
+	$this->assert${1:Equals}(
+		${2},
+		${3}
+	);
+snippet ar
+	$${1} = [
+		${2},
+	];
