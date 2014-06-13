@@ -27,6 +27,7 @@ set wildmenu
 set wildmode=longest,full
 set wildignore=.svn,.git
 set ruler
+set nu
 syntax on
 filetype plugin indent on
 
@@ -42,5 +43,6 @@ inoremap <Up>       <NOP>
 inoremap <Down>     <NOP>
 inoremap <Left>     <NOP>
 inoremap <Right>    <NOP>
+" inoremap <Esc>      <NOP>
 
 let g:syntastic_html_checkers=[]
