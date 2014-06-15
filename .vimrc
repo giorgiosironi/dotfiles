@@ -28,6 +28,8 @@ set wildmode=longest,full
 set wildignore=.svn,.git
 set ruler
 set nu
+set cursorline
+set showcmd
 syntax on
 filetype plugin indent on
 
@@ -44,5 +46,7 @@ inoremap <Down>     <NOP>
 inoremap <Left>     <NOP>
 inoremap <Right>    <NOP>
 " inoremap <Esc>      <NOP>
+
+nnoremap <Leader><space> :nohlsearch<CR>
 
 let g:syntastic_html_checkers=[]
