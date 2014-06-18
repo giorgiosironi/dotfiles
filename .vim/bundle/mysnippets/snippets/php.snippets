@@ -62,6 +62,17 @@ snippet construct2
 		$this->$1 = $$1;
 		$this->$2 = $$2;
 	}
+snippet construct3
+	private $$1;
+	private $$2;
+	private $$3;
+
+	public function __construct($${1:}, $${2:}, $${3:})
+	{
+		$this->$1 = $$1;
+		$this->$2 = $$2;
+		$this->$3 = $$3;
+	}
 snippet factorym1
 	private $$1;
 
