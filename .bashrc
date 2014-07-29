@@ -34,7 +34,10 @@ C_LIGHT_PURPLE="\[\033[1;35m\]"
 C_LIGHT_RED="\[\033[1;31m\]"
 C_LIGHT_GREEN="\[\033[1;32m\]"
 C_RESET="\[\033[0m\]"
-source ~/.bash_prompt
+if [ -e .~/.bash_prompt ]
+then
+    source ~/.bash_prompt
+fi
 function parse_git_dirty {
     [[ $(git status 2> /dev/null | tail -n1) != "nothing to commit (working directory clean)" ]] && echo "*"
 }
@@ -73,3 +76,4 @@ export TERM=xterm
 if [ "$UID" -ne 0 ] 
     then setxkbmap -layout "us" -variant "altgr-intl" -option "ctrl:nocaps"
 fi
+source /root/.onebip_bashrc
