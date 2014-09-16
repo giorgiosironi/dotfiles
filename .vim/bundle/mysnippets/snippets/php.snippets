@@ -40,6 +40,11 @@ snippet testm
 	{
 		${2}
 	}
+snippet testi
+	public function test${1}()
+	{
+		$this->markTestIncomplete("${2}");
+	}
 snippet tests
 	public function setUp()
 	{
@@ -101,6 +106,11 @@ snippet factorym2
 	}
 snippet pum
 	public function ${1}(${2})
+	{
+		${3}
+	}
+snippet prim
+	private function ${1}(${2})
 	{
 		${3}
 	}
