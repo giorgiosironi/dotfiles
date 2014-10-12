@@ -8,7 +8,7 @@ snippet nclass
 	}
 snippet nint
 	<?php
-	namespace ${1};
+	namespace ${1:`CurrentNamespace()`};
 
 	interface ${2:`Filename()`}
 	{
@@ -30,7 +30,7 @@ snippet interface
 	}
 snippet ntestc
 	<?php
-	namespace ${1};
+	namespace ${1:`CurrentNamespace()`};
 
 	class ${2:`Filename()`} extends \PHPUnit_Framework_TestCase
 	{
