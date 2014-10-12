@@ -55,3 +55,19 @@ inoremap <Right>    <NOP>
 nnoremap <Leader><space> :nohlsearch<CR>
 
 let g:syntastic_html_checkers=[]
+
+function! CurrentNamespace()
+    let path = split(expand("%:p"), "/")
+    let pathInverted = copy(path)
+    call reverse(pathInverted)
+    let rootFolder = -1
+    for folder in pathInverted
+        let firstCharacter = strpart(folder, 0, 1)
+        if (firstCharacter ==# toupper(firstCharacter))
+            let rootFolder = rootFolder - 1
+        endif
+    endfor
+    let namespace = join(path[rootFolder+1:-2], "\\")
+    return namespace
+endfunction
+
