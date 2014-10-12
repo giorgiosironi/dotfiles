@@ -70,7 +70,9 @@ export GREP_OPTIONS
 alias phpcsfixer='php ~/php-cs-fixer.phar'
 export TERM=xterm
 
+export GOROOT=$HOME/go
+export PATH=$PATH:$GOROOT/bin
+
 if [ "$UID" -ne 0 ] 
     then setxkbmap -layout "us" -variant "altgr-intl" -option "ctrl:nocaps"
 fi
-source /root/.onebip_bashrc
