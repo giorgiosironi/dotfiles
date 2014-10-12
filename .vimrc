@@ -65,6 +65,8 @@ function! CurrentNamespace()
         let firstCharacter = strpart(folder, 0, 1)
         if (firstCharacter ==# toupper(firstCharacter))
             let rootFolder = rootFolder - 1
+        else
+            break
         endif
     endfor
     let namespace = join(path[rootFolder+1:-2], "\\")
