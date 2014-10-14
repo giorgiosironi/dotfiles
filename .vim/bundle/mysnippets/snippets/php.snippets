@@ -131,3 +131,7 @@ snippet ar
 	$${1} = [
 		${2},
 	];
+snippet stub
+	$${1}->expects($this->${2}())
+		->method('${3}')
+		->will($this->returnValue(${4}));
