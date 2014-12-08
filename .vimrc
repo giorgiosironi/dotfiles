@@ -30,6 +30,7 @@ set ruler
 set nu
 set cursorline
 set showcmd
+set tabpagemax=100
 syntax on
 filetype plugin indent on
 
