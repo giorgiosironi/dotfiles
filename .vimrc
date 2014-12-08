@@ -42,6 +42,11 @@ autocmd FileType ruby set tabstop=2
 autocmd FileType ruby set softtabstop=2
 autocmd FileType ruby set shiftwidth=2
 
+" indentation for JavaScript
+autocmd FileType javascript set tabstop=2
+autocmd FileType javascript set softtabstop=2
+autocmd FileType javascript set shiftwidth=2
+
 noremap <Up>       <NOP>
 noremap <Down>     <NOP>
 noremap <Left>     <NOP>
