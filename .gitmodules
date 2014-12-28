@@ -16,3 +16,6 @@
 [submodule ".vim/bundle/vim-syntax-for-PHP.git"]
 	path = .vim/bundle/vim-syntax-for-PHP.git
 	url = git@github.com:2072/vim-syntax-for-PHP.git
+[submodule ".vim/bundle/vim-elixir.git"]
+	path = .vim/bundle/vim-elixir.git
+	url = git@github.com:elixir-lang/vim-elixir.git
