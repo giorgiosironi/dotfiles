@@ -135,3 +135,5 @@ snippet stub
 	$${1}->expects($this->${2}())
 		->method('${3}')
 		->will($this->returnValue(${4}));
+snippet export
+	error_log(var_export(${1}, true));
