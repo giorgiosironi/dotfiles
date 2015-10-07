@@ -137,3 +137,5 @@ snippet stub
 		->will($this->returnValue(${4}));
 snippet export
 	error_log(var_export(${1}, true));
+snippet trace
+	error_log((new \Exception())->getTraceAsString());
