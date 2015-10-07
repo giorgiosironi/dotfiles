@@ -17,6 +17,7 @@ alias agi='sudo apt-get install'
 alias agr='sudo apt-get remove'
 alias agc='sudo apt-get clean'
 alias aga='sudo apt-get autoremove'
+alias ops='git commit --amend'
 
 C_RED="\[\033[0;31m\]"
 C_GREEN="\[\033[0;32m\]"
