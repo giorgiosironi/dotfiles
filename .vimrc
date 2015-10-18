@@ -61,8 +61,9 @@ inoremap <Right>    <NOP>
 nnoremap <Leader><space> :nohlsearch<CR>
 
 let g:syntastic_html_checkers=[]
+<<<<<<< HEAD
 let g:syntastic_yaml_checkers=[]
-
+let g:syntastic_elixir_checkers=[]
 
 function! CurrentNamespace()
     let path = split(expand("%:p"), "/")
