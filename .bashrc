@@ -77,4 +77,3 @@ export PATH=$PATH:$GOROOT/bin
 if [ "$UID" -ne 0 ] 
     then setxkbmap -layout "us" -variant "altgr-intl" -option "ctrl:nocaps"
 fi
-source /root/.onebip_bashrc
