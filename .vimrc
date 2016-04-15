@@ -38,6 +38,9 @@ filetype plugin indent on
 autocmd FileType php noremap <C-L> :!/usr/bin/env php -l %<CR>
 autocmd FileType phtml noremap <C-L> :!/usr/bin/env php -l %<CR>
 
+" Clojure syntax highlighting also for these extensions
+autocmd BufRead,BufNewFile *.cljc setf clojure
+
 " indentation for Ruby
 autocmd FileType ruby set tabstop=2
 autocmd FileType ruby set softtabstop=2
