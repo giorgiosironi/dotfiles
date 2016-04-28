@@ -22,3 +22,4 @@ gsettings set org.gnome.gedit.preferences.editor create-backup-copy false
 # Firefox preferences
 sudo cp firefox-preferences.js /usr/lib/firefox/browser/defaults/preferences/
 
+gsettings set org.compiz.grid:/org/compiz/profiles/unity/plugins/grid/ put-right-key <Control><Alt>6
