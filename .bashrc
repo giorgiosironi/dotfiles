@@ -50,7 +50,7 @@ shopt -s histappend
 PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
 export GREP_OPTIONS='--color=auto'
 
-source /etc/bash_completion
+test -e /etc/bash_completion && source /etc/bash_completion
 
 export JSTESTDRIVER_HOME=~/bin
 alias jstestdriver="java -jar $JSTESTDRIVER_HOME/JsTestDriver-1.3.3d.jar"
@@ -77,7 +77,7 @@ export GOROOT=$HOME/go
 export PATH=$PATH:$GOROOT/bin
 
 if [ "$UID" -ne 0 ] 
-    then setxkbmap -layout "us" -variant "altgr-intl" -option "ctrl:nocaps"
+    then which setxkbmap && setxkbmap -layout "us" -variant "altgr-intl" -option "ctrl:nocaps"
 fi
 
 
