@@ -48,7 +48,6 @@ PATH="~/bin:~/bin/vendor/bin:~/maven/bin:~/sweet/bin:/var/lib/gems/1.8/bin/:~/.c
 
 shopt -s histappend
 PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
-export GREP_OPTIONS='--color=auto'
 
 test -e /etc/bash_completion && source /etc/bash_completion
 
