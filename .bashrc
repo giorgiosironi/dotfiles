@@ -63,11 +63,6 @@ alias jlineclj="java -cp /usr/share/java/jline.jar:/usr/share/java/clojure.jar j
 alias docker-hhvm="sudo docker run --rm -v `pwd`:`pwd` -w `pwd` brunoric/hhvm:deb-hhvm hhvm"
 
 EDITOR=vim
-for PATTERN in .cvs .git .hg .svn .work; do
-    GREP_OPTIONS="$GREP_OPTIONS --exclude-dir=$PATTERN"
-done
-export GREP_OPTIONS
-
 
 alias phpcsfixer='php ~/php-cs-fixer.phar'
 export TERM=xterm
