@@ -1,6 +1,6 @@
 #!/bin/bash
 git submodule update -i
-rm ~/.vim
+rm -r ~/.vim
 ln -s ~/dotfiles/.vim ~/.vim
 rm ~/.vimrc
 ln -s ~/dotfiles/.vimrc ~/.vimrc
