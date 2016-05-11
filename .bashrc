@@ -79,6 +79,8 @@ fi
 # added by travis gem
 [ -f /home/giorgio/.travis/travis.sh ] && source /home/giorgio/.travis/travis.sh
 
-# starts ssh-agent
-eval $(ssh-agent)
-ssh-add
+if [ `whoami` != "elife" ]; then
+    # starts ssh-agent
+    eval $(ssh-agent)
+    ssh-add
+fi
