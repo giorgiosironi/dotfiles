@@ -11,7 +11,7 @@ ln -s ~/dotfiles/.inputrc ~/.inputrc
 ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
 
 # tmux, Vim and such
-sudo apt-get install `cat ~/dotfiles/packages.txt`
+sudo apt-get -y install `cat ~/dotfiles/packages.txt`
 
 # set up Right Alt as the compose key for accented letters
 # set up Caps Lock as an additional Ctrl
