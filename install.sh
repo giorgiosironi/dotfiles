@@ -12,6 +12,7 @@ ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
 
 # tmux, Vim and such
 sudo apt-get -y install `cat ~/dotfiles/packages.txt`
+which gdm && sudo apt-get -y install `cat ~/dotfiles/packages-gui.txt`
 
 # Firefox preferences
 sudo cp firefox-preferences.js /usr/lib/firefox/browser/defaults/preferences/
