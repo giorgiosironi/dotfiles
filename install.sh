@@ -1,4 +1,6 @@
 #!/bin/bash
+git config --global core.editor vim
+
 git submodule update -i
 rm -r ~/.vim
 ln -s ~/dotfiles/.vim ~/.vim
@@ -12,12 +14,13 @@ ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
 
 # tmux, Vim and such
 sudo apt-get -y install `cat ~/dotfiles/packages.txt`
-which gdm && sudo apt-get -y install `cat ~/dotfiles/packages-gui.txt`
 
-# Firefox preferences
-sudo cp firefox-preferences.js /usr/lib/firefox/browser/defaults/preferences/
+if which gdm; then
+    sudo apt-get -y install `cat ~/dotfiles/packages-gui.txt`
 
-if which gsettings; then
+    # Firefox preferences
+    sudo cp firefox-preferences.js /usr/lib/firefox/browser/defaults/preferences/
+
     # set up Right Alt as the compose key for accented letters
     # set up Caps Lock as an additional Ctrl
     gsettings set org.gnome.desktop.input-sources xkb-options "['compose:ralt', 'ctrl:nocaps']"
