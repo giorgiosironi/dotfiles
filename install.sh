@@ -10,6 +10,7 @@ rm ~/.bashrc
 ln -s ~/dotfiles/.bashrc ~/.bashrc
 rm ~/.inputrc
 ln -s ~/dotfiles/.inputrc ~/.inputrc
+rm ~/.tmux.conf
 ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
 
 # tmux, Vim and such
