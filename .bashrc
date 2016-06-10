@@ -19,6 +19,9 @@ alias agc='sudo apt-get clean'
 alias aga='sudo apt-get autoremove'
 alias ops='git commit --amend'
 alias grep='grep --exclude="*.pyc" --color=auto'
+if [ -f ~/.bash_aliases ]; then
+	. ~/.bash_aliases
+fi
 
 C_RED="\[\033[0;31m\]"
 C_GREEN="\[\033[0;32m\]"
