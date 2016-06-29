@@ -2,16 +2,11 @@
 git config --global core.editor vim
 
 git submodule update -i
-rm -r ~/.vim
-ln -s ~/dotfiles/.vim ~/.vim
-rm ~/.vimrc
-ln -s ~/dotfiles/.vimrc ~/.vimrc
-rm ~/.bashrc
-ln -s ~/dotfiles/.bashrc ~/.bashrc
-rm ~/.inputrc
-ln -s ~/dotfiles/.inputrc ~/.inputrc
-rm ~/.tmux.conf
-ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
+ln -sf ~/dotfiles/.vim ~/.vim
+ln -sf ~/dotfiles/.vimrc ~/.vimrc
+ln -sf ~/dotfiles/.bashrc ~/.bashrc
+ln -sf ~/dotfiles/.inputrc ~/.inputrc
+ln -sf ~/dotfiles/.tmux.conf ~/.tmux.conf
 
 # tmux, Vim and such
 sudo apt-get -y install `cat ~/dotfiles/packages.txt`
