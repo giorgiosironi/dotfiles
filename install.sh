@@ -31,4 +31,7 @@ if which gdm; then
     gsettings set org.compiz.grid:/org/compiz/profiles/unity/plugins/grid/ put-topleft-key "<Control><Alt>7"
     gsettings set org.compiz.grid:/org/compiz/profiles/unity/plugins/grid/ put-top-key "<Control><Alt>8"
     gsettings set org.compiz.grid:/org/compiz/profiles/unity/plugins/grid/ put-topright-key "<Control><Alt>9"
+
+    ln -fs ~/dotfiles/user-dirs.dirs ~/.config/user-dirs.dirs
+    xdg-user-dirs-update
 fi
