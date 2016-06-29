@@ -2,6 +2,7 @@
 git config --global core.editor vim
 
 git submodule update -i
+rm -rf ~/.vim
 ln -sf ~/dotfiles/.vim ~/.vim
 ln -sf ~/dotfiles/.vimrc ~/.vimrc
 ln -sf ~/dotfiles/.bashrc ~/.bashrc
