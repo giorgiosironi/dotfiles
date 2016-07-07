@@ -87,3 +87,6 @@ if [ `whoami` != "elife" ]; then
     eval $(ssh-agent)
     ssh-add
 fi
+
+export BLDR_ROLE='admin'
+
