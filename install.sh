@@ -1,4 +1,5 @@
 #!/bin/bash
+mkdir -p ~/bin
 git config --global core.editor vim
 
 git submodule update -i
