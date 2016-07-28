@@ -18,6 +18,8 @@ alias agr='sudo apt-get remove'
 alias agc='sudo apt-get clean'
 alias aga='sudo apt-get autoremove'
 alias ops='git commit --amend'
+alias next_commit='git diff --cached'
+alias gc='git commit'
 alias grep='grep --exclude="*.pyc" --color=auto'
 if [ -f ~/.bash_aliases ]; then
 	. ~/.bash_aliases
