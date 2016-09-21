@@ -13,9 +13,11 @@ ln -sf ~/dotfiles/.tmux.conf ~/.tmux.conf
 # tmux, Vim and such
 sudo apt-get -y install `cat ~/dotfiles/packages.txt`
 
-wget -c https://github.com/github/hub/releases/download/v2.2.3/hub-linux-amd64-2.2.3.tgz
-tar zvxf hub-linux-amd64-2.2.3.tgz
-ln -sf ~/dotfiles/hub-linux-amd64-2.2.3/bin/hub ~/bin/hub
+if [ ! -e !/bin/hub ]; then
+    wget -c https://github.com/github/hub/releases/download/v2.2.3/hub-linux-amd64-2.2.3.tgz
+    tar zvxf hub-linux-amd64-2.2.3.tgz
+    ln -sf ~/dotfiles/hub-linux-amd64-2.2.3/bin/hub ~/bin/hub
+fi
 
 
 if which gdm; then
