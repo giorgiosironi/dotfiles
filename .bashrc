@@ -70,7 +70,6 @@ alias docker-hhvm="sudo docker run --rm -v `pwd`:`pwd` -w `pwd` brunoric/hhvm:de
 
 EDITOR=vim
 
-alias phpcsfixer='php ~/php-cs-fixer.phar'
 #export TERM=xterm
 #export COLORTERM=xterm
 
