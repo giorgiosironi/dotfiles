@@ -66,6 +66,8 @@ nnoremap <Leader><space> :nohlsearch<CR>
 let g:syntastic_html_checkers=[]
 let g:syntastic_yaml_checkers=[]
 let g:syntastic_elixir_checkers=[]
+let g:ctrlp_custom_ignore = '\.pyc\|\.bin'
+let g:ctrlp_clear_cache_on_exit = 0
 
 function! CurrentNamespace()
     let path = split(expand("%:p"), "/")
