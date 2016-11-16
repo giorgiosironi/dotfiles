@@ -68,7 +68,7 @@ function parse_git_dirty {
 }
 PS1="${COLOR}[\$(date +%H:%M:%S)][\u@\h:\w]$ ${C_RED}${C_RESET}"
 
-PATH="~/bin:~/bin/vendor/bin:~/maven/bin:~/sweet/bin:/var/lib/gems/1.8/bin/:~/.composer/vendor/bin:${PATH}"
+PATH="~/bin:~/bin/vendor/bin:~/maven/bin:~/sweet/bin:/var/lib/gems/1.8/bin/:~/.composer/vendor/bin:~/.config/composer/vendor/bin:${PATH}"
 
 shopt -s histappend
 PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
