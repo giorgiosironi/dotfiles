@@ -21,6 +21,24 @@ alias ops='git commit --amend'
 alias next_commit='git diff --cached'
 alias gc='git commit'
 alias grep='grep --exclude="*.pyc" --color=auto'
+function propose_as_pr {
+    git checkout -b $1
+    git push origin $1
+    hub pull-request
+    git checkout master
+    git reset --hard origin/master
+}
+function update_branch {
+    base=${2:-master}
+    git fetch
+    git checkout $1
+    git pull origin $1
+    git rebase origin/$base
+}
+function latest_master {
+    git checkout master
+    git pull origin master
+}
 if [ -f ~/.bash_aliases ]; then
 	. ~/.bash_aliases
 fi
