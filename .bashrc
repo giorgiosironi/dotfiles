@@ -20,7 +20,12 @@ alias aga='sudo apt-get autoremove'
 alias ops='git commit --amend'
 alias next_commit='git diff --cached'
 alias gc='git commit'
+alias gs='git status'
+alias gd='git diff'
+alias latest_master='git checkout master && git pull origin master'
 alias grep='grep --exclude="*.pyc" --color=auto'
+alias venv='source venv/bin/activate'
+alias scheme='sudo docker run -it kisom/mit-scheme scheme'
 function propose_as_pr {
     git checkout -b $1
     git push origin $1
@@ -104,9 +109,15 @@ export PATH=$PATH:$GOROOT/bin
 
 if [ `whoami` != "elife" ]; then
     # starts ssh-agent
-    eval $(ssh-agent)
-    ssh-add
+    echo "------" >> ~/bashrc.log
+    pid=$$
+    name=`ps -o comm $pid` # "bash" or "lightdm-session"
+    if [ "$name" = "bash" ]; then
+        eval $(ssh-agent)
+        ssh-add
+    fi
 fi
 
+export GREP_OPTIONS='--exclude=*.pyc --exclude-dir=.git --exclude-dir=venv --exclude-dir=vendor --exclude-dir=node_modules'
 export BLDR_ROLE='admin'
 
