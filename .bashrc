@@ -25,7 +25,7 @@ alias gd='git diff'
 alias latest_master='git checkout master && git pull origin master'
 alias grep='grep --exclude="*.pyc" --color=auto'
 alias venv='source venv/bin/activate'
-alias scheme='sudo docker run -it kisom/mit-scheme scheme'
+alias scheme='sudo docker run -v $(pwd):/code -it kisom/mit-scheme rlwrap scheme'
 function propose_as_pr {
     git checkout -b $1
     git push origin $1
