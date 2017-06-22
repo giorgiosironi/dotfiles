@@ -111,7 +111,7 @@ if [ `whoami` != "elife" ]; then
     # starts ssh-agent
     echo "------" >> ~/bashrc.log
     pid=$$
-    name=`ps -o comm $pid` # "bash" or "lightdm-session"
+    name=`ps -ho comm $pid` # "bash" or "lightdm-session"
     if [ "$name" = "bash" ]; then
         eval $(ssh-agent)
         ssh-add
