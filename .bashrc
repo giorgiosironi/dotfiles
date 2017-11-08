@@ -44,6 +44,10 @@ function latest_master {
     git checkout master
     git pull origin master
 }
+function track_branch {
+    branch=$(git rev-parse --abbrev-ref HEAD)
+    git branch --set-upstream-to=origin/"$branch" "$branch"
+}
 if [ -f ~/.bash_aliases ]; then
 	. ~/.bash_aliases
 fi
