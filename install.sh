@@ -14,7 +14,7 @@ ln -sf ~/dotfiles/.tmux.conf ~/.tmux.conf
 sudo apt-get -y install `cat ~/dotfiles/packages.txt`
 
 if [ ! -e ~/bin/hub ]; then
-    wget -c https://github.com/github/hub/releases/download/v2.2.9/hub-linux-amd64-2.2.9.tgz
+    wget --progress=dot:mega -c https://github.com/github/hub/releases/download/v2.2.9/hub-linux-amd64-2.2.9.tgz
     tar zvxf hub-linux-amd64-2.2.9.tgz
     ln -sf ~/dotfiles/hub-linux-amd64-2.2.9/bin/hub ~/bin/hub
 fi
