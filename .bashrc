@@ -51,6 +51,9 @@ function track_branch {
 if [ -f ~/.bash_aliases ]; then
 	. ~/.bash_aliases
 fi
+if [ -f ~/.bash_secrets ]; then
+	. ~/.bash_secrets
+fi
 
 C_RED="\[\033[0;31m\]"
 C_GREEN="\[\033[0;32m\]"
