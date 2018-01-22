@@ -1,5 +1,6 @@
 #!/bin/bash
 mkdir -p ~/bin
+sudo apt-get install git
 git config --global core.editor vim
 
 git submodule update -i
