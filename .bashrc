@@ -116,7 +116,6 @@ export PATH=$PATH:$GOROOT/bin
 
 if [ `whoami` != "elife" ]; then
     # starts ssh-agent
-    echo "------" >> ~/bashrc.log
     pid=$$
     name=`ps -ho comm $pid` # "bash" or "lightdm-session"
     if [ "$name" = "bash" ]; then
