@@ -124,6 +124,7 @@ if [ `whoami` != "elife" ]; then
     fi
 fi
 
-export GREP_OPTIONS='--exclude=*.pyc --exclude-dir=.git --exclude-dir=venv --exclude-dir=vendor --exclude-dir=node_modules'
+GREP_OPTIONS='--exclude=*.pyc --exclude-dir=.git --exclude-dir=venv --exclude-dir=vendor --exclude-dir=node_modules'
+alias grep="grep $GREP_OPTIONS"
 export BLDR_ROLE='admin'
 
