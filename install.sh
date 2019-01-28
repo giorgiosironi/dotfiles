@@ -20,6 +20,10 @@ if [ ! -e ~/bin/hub ]; then
     ln -sf ~/dotfiles/hub-linux-amd64-2.2.9/bin/hub ~/bin/hub
 fi
 
+if [ ! -e /usr/local/bin/docker-compose ]; then
+    sudo curl -L https://github.com/docker/compose/releases/download/1.21.2/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
+fi
+
 
 if which gdm; then
     sudo apt-get -y install `cat ~/dotfiles/packages-gui.txt`
