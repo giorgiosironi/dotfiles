@@ -7,7 +7,8 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
-HISTSIZE=50000
+HISTSIZE=100000
+HISTFILESIZE=100000
 
 alias acs='apt-cache search'
 alias agu='sudo apt-get update'
